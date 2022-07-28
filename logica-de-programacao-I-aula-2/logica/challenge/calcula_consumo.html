@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calcula Consumo</title>
+  </head>
+  <body>
+    <h3>Álcool ou Gasolina?</h3>
+    <p>Seu carro tem um tanque de 40 litros.</p>
+    <p>
+      Com gasolina e usando todo o tanque você fez um caminhoComGasolina de 480
+      quilômetros. Qual é o consumoDeGasolina?
+    </p>
+    <p>
+      Com álcool, um tanque de 40 litros fez um caminhoComAlcool de 300
+      quilômetros. Qual é o consumoDeAlcool?
+    </p>
+    <script>
+      var tanque = 40;
+      var caminhoComGasolina = 480;
+      var caminhoComAlcool = 300;
+
+      var consumoGasolina = caminhoComGasolina / tanque;
+      var consumoAlcool = caminhoComAlcool / tanque;
+      document.write(
+        "O consumo da Gasolina foi de " + consumoGasolina + " km/L"
+      );
+      document.write("<br>");
+      document.write("O consumo do Álcool foi de " + consumoAlcool + " km/L");
+    </script>
+  </body>
+</html>
