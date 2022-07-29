@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculo IMC</title>
+  </head>
+
+  <body>
+    <script>
+      function pulaLinha() {
+        document.write("<br><br>");
+      }
+
+      function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+      }
+
+      function calculaIMC(peso, altura) {
+        var imc = peso / (altura * altura);
+        mostra("O img calculado é " + imc);
+      }
+
+      calculaIMC(83, 1.7);
+    </script>
+  </body>
+</html>
