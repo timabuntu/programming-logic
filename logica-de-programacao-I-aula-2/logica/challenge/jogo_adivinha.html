@@ -18,13 +18,26 @@
       function sorteia(n) {
         return Math.round(Math.random() * n);
       }
-      var inputNumero = sorteia(10);
+
+      function verificaMaiorMenor(aleatorio, sorteado) {
+        if (sorteado < aleatorio) {
+          return " <strong>menor</strong> que o pensado";
+        } else {
+          return "<strong>maior</strong>  que o pensado";
+        }
+      }
+
+      var numeroAutomatico = sorteia(10);
       var numeroAleatorio = Math.round(Math.random() * 10);
 
-      if (inputNumero == numeroAleatorio) {
+      if (numeroAutomatico == numeroAleatorio) {
         mostra("Você acertou 🎉");
       } else {
-        mostra("😥 O número era " + numeroAleatorio + ", tente novamente!");
+        mostra(
+          "😥 O número era " +
+            verificaMaiorMenor(numeroAleatorio, numeroAutomatico) +
+            ", tente novamente!"
+        );
       }
     </script>
   </body>
