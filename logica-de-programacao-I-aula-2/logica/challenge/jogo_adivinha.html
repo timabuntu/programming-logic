@@ -15,7 +15,10 @@
         pulaLinha();
       }
 
-      var inputNumero = prompt("Digite um número de 1 a 10 e tente acertar");
+      function sorteia(n) {
+        return Math.round(Math.random() * n);
+      }
+      var inputNumero = sorteia(10);
       var numeroAleatorio = Math.round(Math.random() * 10);
 
       if (inputNumero == numeroAleatorio) {
