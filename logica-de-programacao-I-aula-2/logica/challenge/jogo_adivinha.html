@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jogo da Adivinhação</title>
+  </head>
+
+  <body>
+    <script>
+      function pulaLinha() {
+        document.write("<br><br>");
+      }
+
+      function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+      }
+
+      var inputNumero = prompt("Digite um número de 1 a 10 e tente acertar");
+      var numeroAleatorio = Math.round(Math.random() * 10);
+
+      if (inputNumero == numeroAleatorio) {
+        mostra("Você acertou 🎉");
+      } else {
+        mostra("😥 O número era " + numeroAleatorio + ", tente novamente!");
+      }
+    </script>
+  </body>
+</html>
