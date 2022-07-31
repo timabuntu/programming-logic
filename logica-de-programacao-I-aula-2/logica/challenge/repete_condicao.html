@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Repetir Enquanto</title>
+  </head>
+  <body>
+    <script>
+      function pulaLinha() {
+        document.write("<br><br>");
+      }
+
+      function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+      }
+
+      var numeroInicio = 30;
+
+      while (numeroInicio <= 40) {
+        if (numeroInicio == 33 || numeroInicio == 37) {
+          numeroInicio = numeroInicio + 1;
+        } else {
+          mostra(numeroInicio);
+          numeroInicio = numeroInicio + 1;
+        }
+      }
+
+      mostra("FIM");
+    </script>
+  </body>
+</html>
