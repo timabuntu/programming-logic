@@ -27,15 +27,15 @@
         var chute = parseInt(prompt("⚽ Chute um numero de 1 a 10! "));
 
         if (chute === numeroAleatorio) {
-          alert("Você acertou 🎉");
-          inicializador = tentativa;
+          alert("👏 Você acertou 🎉");
+          break;
         } else if (tentativa == inicializador) {
           mostra(
             "😭 O número era " +
               "<strong>" +
               numeroAleatorio +
               "</strong>" +
-              " você esgotou no número maximo de tentativas!"
+              ", você esgotou no número maximo de tentativas!"
           );
         } else {
           alert("😥 tente novamente!");
