@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Converter For para WHILE</title>
+  </head>
+
+  <body>
+    <script>
+      function pulaLinha() {
+        document.write("<br><br>");
+      }
+
+      function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+      }
+
+      var inicializador = 0;
+      for (var i = 0; i < 10; i++) {
+        mostra("O resultado é " + 2 * i);
+      }
+
+      while (inicializador < 10) {
+        mostra("O resultado é " + 2 * inicializador);
+        inicializador++;
+      }
+      mostra("FIM");
+    </script>
+  </body>
+</html>
