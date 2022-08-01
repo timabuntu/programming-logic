@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Acumular Valores</title>
+  </head>
+
+  <body>
+    <script>
+      function pulaLinha() {
+        document.write("<br><br>");
+      }
+
+      function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+      }
+
+      var quantidadeFamiliares = parseInt(
+        parseInt(prompt("Digite o total de familiares 😉"))
+      );
+      var valorInicial = 1;
+      var somaIdade = 0;
+
+      while (valorInicial <= quantidadeFamiliares) {
+        var idadeFamiliares = parseInt(prompt("Digite a idade"));
+        somaIdade = somaIdade + idadeFamiliares;
+        valorInicial++;
+      }
+
+      var mediaIdade = somaIdade / quantidadeFamiliares;
+      console.log(mediaIdade);
+      mostra("A média das idades dos familiares é " + mediaIdade);
+      mostra("FIM");
+    </script>
+  </body>
+</html>
