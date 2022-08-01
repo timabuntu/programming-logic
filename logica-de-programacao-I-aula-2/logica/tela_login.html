@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Reduzindo Alterações</title>
+  </head>
+  <body>
+    <script>
+      var loginCadastrado = "alura";
+      var senhaCadastrada = "alura321";
+
+      var maximoTentativa = 3;
+      var numeroTentativa = 1;
+
+      while (maximoTentativa >= numeroTentativa) {
+        var loginInformado = prompt("Informe seu login");
+        var senhaInformada = prompt("Informe sua senha");
+
+        if (
+          loginInformado == loginCadastrado &&
+          senhaInformada == senhaCadastrada
+        ) {
+          alert("Bem-vindo ao sistema 🎉" + loginInformado);
+          numeroTentativa = 3;
+        } else {
+          if (maximoTentativa > numeroTentativa) {
+            alert(
+              loginInformado + " seu login é inválido. Tente novamente! 😥"
+            );
+          } else {
+            if (numeroTentativa == maximoTentativa) {
+              alert(
+                loginInformado +
+                  " o número máximo de tentativa foi  esgotado 😭"
+              );
+            }
+          }
+        }
+        numeroTentativa = numeroTentativa + 1;
+      }
+    </script>
+  </body>
+</html>
